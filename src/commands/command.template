@@ -1,0 +1,22 @@
+const Command = require("../struct/command.js");
+const { MessageEmbed } = require("discord.js");
+
+class TemplateCommand extends Command {
+  constructor() {
+    super({
+      id: "",
+      aliases: [],
+      ratelimit: 5,
+    });
+  }
+
+  async do(message) {
+    try {
+      //code here
+    } catch (e) {
+      return this.client.logs(message, e, "error");
+    }
+  }
+}
+
+module.exports = TemplateCommand;

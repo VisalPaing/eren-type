@@ -1,0 +1,57 @@
+{
+  "name": "discord-music",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Discord music bot written with javascript.",
+  "main": "./src/bot.js",
+  "author": "Nekoyasui",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon",
+    "shard": "node shard.js"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.24.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "common-tags": "^1.8.0",
+    "didyoumean2": "^4.1.0",
+    "discord.js": "^12.5.1",
+    "erela.js": "^2.3.3",
+    "glob": "^7.1.6",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "ms": "^2.1.3",
+    "music-progress-bar": "^1.0.4",
+    "nekoyasui": "^1.2.4",
+    "node-fetch": "^2.6.1",
+    "pretty-error": "^3.0.3",
+    "pretty-ms": "^7.0.1",
+    "quick.replit": "^1.0.3",
+    "systeminformation": "^5.6.12"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/storage/json/*",
+      "src/storage/codebin/*"
+    ],
+    "delay": "2500"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NekoYasui/discord-music.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NekoYasui/discord-music/issues"
+  },
+  "homepage": "https://github.com/NekoYasui/discord-music#readme"
+}
